@@ -1,6 +1,37 @@
 # ACEs and Parenting
 
+## Project Overview
+This project seeks to investigate how Adver Childhood Experiences (ACEs) have an influence or affect the mental well being of parents and as a result how inturn it influences their parenting habits and the outcome of the children's behaviours.
 
+The data in this study was obtained from mothers in Chengdu, China and parents of students in Chiang mai, Thailand.
+
+## Data Source
+The data used in this project is drawn from peer-reviewed journal mainly from [BioMedCentral.com]([https://capmh.biomedcentral.com/) and [ScienceDirect.com](https://www.sciencedirect.com/) which are open access to the public.
+
+## Project Objectives
+The project seeks to highlight:
+1. To examine the **association between maternal ACEs** and **behavioral problems** in their **preschool offspring**. Study was conducted involving 4243 mother-child dyads in Chengdu, China. [^1]
+2. To examine the **relationship between parental ACEs** and **parenting**, the **effect of mental health** which possibly **mediated parenting behaviors**. Data was obtained from 403 parents of 6–18-year-old students in Chiang Mai, Thailand,
+from January to February 2023. [^2]
+   
+## Tools & Technologies Used
+A hybrid approach integrated **SQL’s efficiency** in data extraction, schema design, and structured data management with **Python’s powerful statistical analysis** and **rich visualization** capabilities, delivering a workflow that was both efficient and insight-driven.
+- **PostgreSQL**: Schema design and initial data analysis using SQL.
+- **Python**: Main programming language used.
+  - **SQLAlchemy + psycopg2**: For working with SQL databases directly within Python; database connection and analysis queries.
+  - **Pandas**: For analyzing data and visualization Integration.
+  - **Matplotlib**: For creating basic charts and graphs.
+  - **Seaborn**: For more advanced and visually appealing plots.
+- **VS Code**: Integrated Development Environment (IDE) for scripting and data handling.
+- **Jupyter Notebooks**: An interactive environment for combining code, text, and visuals in one document.
+- **Git & GitHub**: Version control.
+
+## Schema Design
+The database is organized into one schema, containing structured tables optimized for storing and querying the study datasets. All tables include primary keys, appropriate data types, and constraints to ensure referential integrity and facilitate cross-study analysis. Data was sourced from specific tables in the articles.
+
+## Data Analysis
+
+## Recommendations
 
 ## **Insights**
 
@@ -23,3 +54,8 @@
 This suggests that **ACEs shape parenting styles directly**, likely through learned behaviour models.
 **For the child**, increased corporal punishment raises **risks of negative socio-emotional outcomes and perpetuates the intergenerational cycle of trauma**.
 
+## Conclusion
+
+###  References
+
+[^1]: [Maternal adverse childhood experiences and behavioral problems in preschool offspring: the mediation role of parenting styles"; Table 2.] (https://capmh.biomedcentral.com/articles/10.1186/s13034-023-00646-3). ```Luo, S., Chen, D., Li, C. et al. Maternal adverse childhood experiences and behavioral problems in preschool offspring: the mediation role of parenting styles. Child Adolesc Psychiatry Ment Health 17, 95 (2023). https://doi.org/10.1186/s13034-023-00646-3```
