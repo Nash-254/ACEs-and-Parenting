@@ -5,8 +5,8 @@ CREATE SCHEMA IF NOT EXISTS aces_and_parenting;
 SET search_path TO aces_and_parenting, public;
 
 -- ============================================================================
--- Table creation, data insert and queries for Association between maternal ACEs and children’s behavioral problems
--- Source: "Maternal adverse childhood experiences and behavioral problems in preschool offspring: the mediation role of parenting styles"; Table 2
+-- Table creation, data insert and queries for Association between maternal ACEs and children’s behavioral problems.
+-- Source: "Maternal adverse childhood experiences and behavioral problems in preschool offspring: the mediation role of parenting styles"; Table 2.
 -------------------------------------------------------------------------------
 
 -- TABLE CREATION
@@ -19,8 +19,8 @@ CREATE TABLE aces_and_parenting.maternal_aces_behavioral_problems (
     ci_lower NUMERIC(5,2),
     ci_upper NUMERIC(5,2),
     significant BOOLEAN,
-    p_value_note VARCHAR(20),     -- 'p < 0.05' where applicable
-    p_value_trend NUMERIC(6,4)    -- only filled for ace_count = '≥4'
+    p_value_note VARCHAR(20),     
+    p_value_trend NUMERIC(6,4)    
 );
 
 -- DATA INSERT for Crude model
@@ -102,9 +102,10 @@ INSERT INTO aces_and_parenting.maternal_aces_behavioral_problems
 ('Adjusted', 'Hyperactivity index', '≥4', 3.71, 2.25, 6.11, TRUE, 'p < 0.05', 0.0001);
 
 -- VERIFY DATA INTEGRITY
-SELECT  Significant FROM aces_and_parenting.maternal_aces_behavioral_problems;
+SELECT * FROM aces_and_parenting.maternal_aces_behavioral_problems;
 
 -- DATA QUERY ANALYSIS
+-- Query to find all significant associations in the Adjusted model where ace count ≥4(as per report results), ordered by odds ratio descending.
 SELECT 
     model_type,
     behavioral_problem, 
@@ -112,21 +113,22 @@ SELECT
     odds_ratio, 
     significant
 FROM aces_and_parenting.maternal_aces_behavioral_problems 
-WHERE significant = TRUE and model_type = 'Adjusted'
+WHERE significant = TRUE and model_type = 'Adjusted' and ace_count = '≥4'
 ORDER BY odds_ratio DESC;
 
 --------------------------------------------------------------------------------
--- END of Table creation, data insert and queries for Association between maternal ACEs and children’s behavioral problems
+-- END of Table creation, data insert and queries for Association between maternal ACEs and children’s behavioral problems.
 -- =============================================================================
 
 
+
 -- ============================================================================
--- Table creation, data insert and queries for parental ACEs and parenting behaviours
--- Source: "The relationship between parental adverse childhood experiences and parenting behaviors"; Table 3 & 4
+-- Table creation, data insert and queries for correlation between parental ACEs and parenting behaviours.
+-- Source: "The relationship between parental adverse childhood experiences and parenting behaviors"; Table 3 & 4.
 -------------------------------------------------------------------------------
--- TABLE CREATION exploring the relationship between ACEs, parental mental health, and parenting behaviors
--- Pearson correlations matrix from Table 3
-CREATE TABLE pearson_correlation_matrix (
+-- TABLE CREATION exploring the relationship between ACEs, parental mental health, and parenting behaviors.
+-- Pearson correlations matrix from Table 3.
+CREATE TABLE aces_and_parenting.pearson_correlation_matrix (
     var1 TEXT NOT NULL,
     var2 TEXT NOT NULL,
     correlation NUMERIC(6,3),
@@ -134,7 +136,7 @@ CREATE TABLE pearson_correlation_matrix (
 );
 
 -- DATA INSERT
-INSERT INTO pearson_correlation_matrix (var1, var2, correlation, significance) VALUES
+INSERT INTO aces_and_parenting.pearson_correlation_matrix (var1, var2, correlation, significance) VALUES
 ('Parental ACEs','Depression',0.192,'Highly Significant'),
 ('Parental ACEs','Anxiety',0.204,'Highly Significant'),
 ('Parental ACEs','Stress',0.181,'Highly Significant'),
@@ -202,30 +204,32 @@ INSERT INTO pearson_correlation_matrix (var1, var2, correlation, significance) V
 
 
 -- VERIFY DATA INTEGRITY
-select * from pearson_correlation_matrix;
+select * from aces_and_parenting.pearson_correlation_matrix;
 
 -- DATA QUERY ANALYSIS
 -- Query to find all significant correlations with 'Parental ACEs'
 select *
-from pearson_correlation_matrix
+from aces_and_parenting.pearson_correlation_matrix
 where var1 = 'Parental ACEs' and significance not in ('Not Significant')
 order by correlation DESC;
-
+--------------------------------------------------------------------------------
 
 -- TABLE CREATION exploring regression paths from Table 4
 -- Direct and indirect effects of parental ACEs on parenting behaviors via parental mental health
-CREATE TABLE regression_paths (
+CREATE TABLE aces_and_parenting.regression_paths (
     id SERIAL PRIMARY KEY,
     source TEXT NOT NULL,        -- starting variable (e.g., ACEs)
     mediator TEXT,               -- confounder/mediator (nullable for direct paths)
     parental_behaviour TEXT NOT NULL, -- outcome parenting behaviour
     effect_type TEXT CHECK (effect_type IN ('direct','indirect')),
     beta NUMERIC(8,4),
-    significance TEXT,           -- *, **, ***,NULL    p_value TEXT                 -- textual p-value (e.g., 'p<0.05', 'p<0.001', NULL)
+    significance TEXT,
+    p_value VARCHAR(20)
 );
 
 -- DATA INSERT
-INSERT INTO regression_paths (source, mediator, parental_behaviour, effect_type, beta, significance, p_value) VALUES
+-- Direct effects
+INSERT INTO aces_and_parenting.regression_paths (source, mediator, parental_behaviour, effect_type, beta, significance, p_value) VALUES
 ('ACEs', NULL, 'Depression', 'direct', 0.1946, 'Highly Significant', 'p<0.001'),
 ('Sex (Female)', NULL, 'Depression', 'direct', 0.0516, 'Not Significant', NULL),
 ('ACEs', NULL, 'Anxiety', 'direct', 0.2083, 'Highly Significant', 'p<0.001'),
@@ -255,7 +259,8 @@ INSERT INTO regression_paths (source, mediator, parental_behaviour, effect_type,
 ('Anxiety', NULL, 'Corporal punishment', 'direct', 0.0428, 'Not Significant', NULL),
 ('Sex (Female)', NULL, 'Corporal punishment', 'direct', 0.1261, 'More Significant', 'p<0.01');
 
-INSERT INTO regression_paths (source, mediator, parental_behaviour, effect_type, beta, significance, p_value) VALUES
+-- Indirect effects
+INSERT INTO aces_and_parenting.regression_paths (source, mediator, parental_behaviour, effect_type, beta, significance, p_value) VALUES
 ('ACEs', 'Depression', 'Parental involvement', 'indirect', -0.002, 'Not Significant', NULL),
 ('ACEs', 'Anxiety', 'Parental involvement', 'indirect', -0.006, 'Not Significant', NULL),
 ('ACEs', 'Stress', 'Parental involvement', 'indirect', -0.012, 'Not Significant', NULL),
@@ -278,15 +283,14 @@ INSERT INTO regression_paths (source, mediator, parental_behaviour, effect_type,
 ('ACEs', 'Anxiety', 'Corporal punishment', 'indirect', 0.009, 'Not Significant', NULL);
 
 -- VERIFY DATA INTEGRITY
-select * from regression_paths;
+select * from aces_and_parenting.regression_paths;
 
 -- DATA QUERY ANALYSIS
--- Query to find all significant direct effects of ACEs on parenting behaviours
+-- Query to find all significant direct effects of ACEs on parenting behaviours as per the report results, ordered by beta descending
 select *
-from regression_paths
-where source = 'ACEs' and significance not in ('Not Significant')    
+from aces_and_parenting.regression_paths
+where significance not in ('Not Significant') and source not in ('Sex (Female)')   
 order by beta DESC;
-
 --------------------------------------------------------------------------------
--- END of Table creation, data insert and queries for parental ACEs and parenting behaviours    
+-- END of Tables creation, data insert and queries for correlation between parental ACEs and parenting behaviours.   
 -- =============================================================================
