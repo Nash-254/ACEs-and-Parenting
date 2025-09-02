@@ -113,7 +113,7 @@ SELECT
     odds_ratio, 
     significant
 FROM aces_and_parenting.maternal_aces_behavioral_problems 
-WHERE significant = TRUE and model_type = 'Adjusted' and ace_count = '≥4'
+WHERE significant = TRUE and model_type = 'Adjusted'
 ORDER BY odds_ratio DESC;
 
 --------------------------------------------------------------------------------
