@@ -32,13 +32,13 @@ A hybrid approach integrated **SQL’s efficiency** in data extraction, schema d
 The database is organized into one schema, containing structured tables optimized for storing and querying the study datasets. All tables include primary keys, appropriate data types, and constraints to ensure referential integrity and facilitate cross-study analysis. Data was sourced from specific tables in the articles.
 
 ## Data Analysis
-### 1. Association between maternal ACEs and behavioral problems in their **preschool offspring.
+### 1. Association between maternal ACEs and behavioral problems in their preschool offspring.
 **Insights**
 
 ![Maternal ACEs and children behaviour outcomes](/visuals/1.Maternal_ACEs_and_Children_Behaviour.png)
 **Figure 1.** Maternal ACEs and children behaviour outcomes 
 
-### 2. Relationship between parental ACEs and parenting, the effect of mental health** which possibly mediated parenting behaviors.
+### 2. Relationship between parental ACEs and parenting, the effect on mental health which possibly mediated parenting behaviors.
 
 **Insights**
 
@@ -49,6 +49,13 @@ The database is organized into one schema, containing structured tables optimize
 
 ![ACEs and direct parental mental health and parentingbehaviour](/visuals/2.ACEs_and_direct_mental_health_parenting_behaviour.png)
 
+
+## Recommendations
+
+## Conclusion
+**Parental ACEs are a strong predictor of corporal punishment, independent of mental health factors**. This suggests that ACEs shape parenting styles directly, likely through learned behaviour models.
+For the **child**, increased **corporal punishment** raises risks of **negative socio-emotional outcomes** and perpetuates the **intergenerational cycle of trauma**.
+
  **2. Future of the Child**
 - Exposure to corporal punishment is strongly linked (from broader literature) to:
   - Higher **aggression** and **externalizing behaviours** (acting out, defiance).
@@ -57,12 +64,6 @@ The database is organized into one schema, containing structured tables optimize
 - Therefore, children of parents with high ACEs face a **double risk**:
   - Direct exposure to corporal punishment.
   - Potential intergenerational transmission of trauma (they may themselves parent harshly later).
-
-## Recommendations
-
-## Conclusion
-**Parental ACEs are a strong predictor of corporal punishment, independent of mental health factors**. This suggests that ACEs shape parenting styles directly, likely through learned behaviour models.
-For the **child**, increased **corporal punishment** raises risks of **negative socio-emotional outcomes** and perpetuates the **intergenerational cycle of trauma**.
 
 ###  References
 
