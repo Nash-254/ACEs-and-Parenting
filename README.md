@@ -12,7 +12,7 @@ See references section for citation details.
 
 ## Project Objectives
 The project seeks to highlight:
-1. To examine the **association between maternal ACEs** and **behavioral problems** in their **preschool offspring**. Study was conducted involving 4243 mother-child dyads in Chengdu, China. [^1]
+1. To examine the **association between maternal ACEs** and **behavioral problems** in their **preschool offspring**. Study was conducted involving 4,243 mother-child dyads in Chengdu, China. [^1]
 2. To examine the **relationship between parental ACEs** and **parenting**, the **effect of mental health** which possibly **mediated parenting behaviors**. Data was obtained from 403 parents of 6–18-year-old students in Chiang Mai, Thailand,
 from January to February 2023. [^2]
    
@@ -32,8 +32,6 @@ A hybrid approach integrated **SQL’s efficiency** in data extraction, schema d
 The database is organized into one schema, containing structured tables optimized for storing and querying the study datasets. All tables include primary keys, appropriate data types, and constraints to ensure referential integrity and facilitate cross-study analysis. Data was sourced from specific tables in the articles.
 
 ## Data Analysis
-
-## Recommendations
 
 ## **Insights**
 
@@ -56,7 +54,11 @@ The database is organized into one schema, containing structured tables optimize
 This suggests that **ACEs shape parenting styles directly**, likely through learned behaviour models.
 **For the child**, increased corporal punishment raises **risks of negative socio-emotional outcomes and perpetuates the intergenerational cycle of trauma**.
 
+## Recommendations
+
 ## Conclusion
+**Parental ACEs are a strong predictor of corporal punishment, independent of mental health factors**. This suggests that ACEs shape parenting styles directly, likely through learned behaviour models.
+For the **child**, increased **corporal punishment** raises risks of **negative socio-emotional outcomes** and perpetuates the **intergenerational cycle of trauma**.
 
 ###  References
 
