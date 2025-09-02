@@ -6,7 +6,9 @@ This project seeks to investigate how Adver Childhood Experiences (ACEs) have an
 The data in this study was obtained from mothers in Chengdu, China and parents of students in Chiang mai, Thailand.
 
 ## Data Source
-The data used in this project is drawn from peer-reviewed journal mainly from [BioMedCentral.com]([https://capmh.biomedcentral.com/) and [ScienceDirect.com](https://www.sciencedirect.com/) which are open access to the public.
+The data used in this project is drawn from peer-reviewed journal mainly from [BioMedCentral.com]([https://capmh.biomedcentral.com/) and [ScienceDirect.com](https://www.sciencedirect.com/) which are open access to the public. 
+
+See references section for citation details.
 
 ## Project Objectives
 The project seeks to highlight:
