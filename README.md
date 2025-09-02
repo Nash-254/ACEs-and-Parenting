@@ -1,9 +1,9 @@
 # ACEs and Parenting
 
 ## Project Overview
-This project seeks to investigate how Adver Childhood Experiences (ACEs) have an influence or affect the mental well being of parents and as a result how inturn it influences their parenting habits and the outcome of the children's behaviours.
+This project aims to examine the impact of **Adverse Childhood Experiences (ACEs)** on the **mental well-being of parents**, and how these effects subsequently shape their **parenting practices** and contribute to the **behavioral outcomes observed in their children**.
 
-The data in this study was obtained from mothers in Chengdu, China and parents of students in Chiang mai, Thailand.
+The data in this study was obtained from mothers in Chengdu, China and parents of students in Chiang Mai, Thailand.
 
 ## Data Source
 The data used in this project is drawn from peer-reviewed journal mainly from [BioMedCentral.com]([https://capmh.biomedcentral.com/) and [ScienceDirect.com](https://www.sciencedirect.com/) which are open access to the public. 
