@@ -58,4 +58,12 @@ This suggests that **ACEs shape parenting styles directly**, likely through lear
 
 ###  References
 
-[^1]: [Maternal adverse childhood experiences and behavioral problems in preschool offspring: the mediation role of parenting styles"; Table 2.] (https://capmh.biomedcentral.com/articles/10.1186/s13034-023-00646-3). ```Luo, S., Chen, D., Li, C. et al. Maternal adverse childhood experiences and behavioral problems in preschool offspring: the mediation role of parenting styles. Child Adolesc Psychiatry Ment Health 17, 95 (2023). https://doi.org/10.1186/s13034-023-00646-3```
+[^1]: [Maternal adverse childhood experiences and behavioral problems in preschool offspring: the mediation role of parenting styles"; Table 2.](https://capmh.biomedcentral.com/articles/10.1186/s13034-023-00646-3). ```Luo, S., Chen, D., Li, C. et al. Maternal adverse childhood experiences and behavioral problems in preschool offspring: the mediation role of parenting styles. Child Adolesc Psychiatry Ment Health 17, 95 (2023). https://doi.org/10.1186/s13034-023-00646-3.```
+
+[^2]: [The relationship between parental adverse childhood experiences and parenting behaviors"; Table 3 & 4.](https://www.sciencedirect.com/science/article/pii/S000169182400043X)```Kewalin Wattanatchariya, Assawin Narkpongphun, Suttipong Kawilapat,
+The relationship between parental adverse childhood experiences and parenting behaviors,
+Acta Psychologica,
+Volume 243,
+2024,
+104166,
+ISSN 0001-6918```
