@@ -1,8 +1,8 @@
 -- ===============================================================================
 -- POSTGRESQL ACE AND PARENTING SCHEMA CREATION 
 -- ===============================================================================
-CREATE SCHEMA IF NOT EXISTS ace_and_parenting;
-SET search_path TO ace_and_parenting, public;
+CREATE SCHEMA IF NOT EXISTS aces_and_parenting;
+SET search_path TO aces_and_parenting, public;
 
 -- ============================================================================
 -- Table creation, data insert and queries for Association between maternal ACEs and children’s behavioral problems
@@ -10,7 +10,7 @@ SET search_path TO ace_and_parenting, public;
 -------------------------------------------------------------------------------
 
 -- TABLE CREATION
-CREATE TABLE ace_and_parenting.maternal_aces_behavioral_problems (
+CREATE TABLE aces_and_parenting.maternal_aces_behavioral_problems (
     id SERIAL PRIMARY KEY,
     model_type VARCHAR(20),       -- 'Crude' or 'Adjusted'
     behavioral_problem VARCHAR(50),
@@ -24,7 +24,7 @@ CREATE TABLE ace_and_parenting.maternal_aces_behavioral_problems (
 );
 
 -- DATA INSERT for Crude model
-INSERT INTO ace_and_parenting.maternal_aces_behavioral_problems 
+INSERT INTO aces_and_parenting.maternal_aces_behavioral_problems 
 (model_type, behavioral_problem, ace_count, odds_ratio, ci_lower, ci_upper, significant, p_value_note, p_value_trend) VALUES
 ('Crude', 'Conduct problems', '0', NULL, NULL, NULL, FALSE, NULL, NULL),
 ('Crude', 'Conduct problems', '1', 2.65, 1.48, 4.75, TRUE, 'p < 0.05', NULL),
@@ -63,7 +63,7 @@ INSERT INTO ace_and_parenting.maternal_aces_behavioral_problems
 ('Crude', 'Hyperactivity index', '≥4', 5.91, 3.67, 9.50, TRUE, 'p < 0.05', 0.0001);
 
 -- DATA INSERTfor Adjusted model
-INSERT INTO ace_and_parenting.maternal_aces_behavioral_problems 
+INSERT INTO aces_and_parenting.maternal_aces_behavioral_problems 
 (model_type, behavioral_problem, ace_count, odds_ratio, ci_lower, ci_upper, significant, p_value_note, p_value_trend) VALUES
 ('Adjusted', 'Conduct problems', '0', NULL, NULL, NULL, FALSE, NULL, NULL),
 ('Adjusted', 'Conduct problems', '1', 2.08, 1.15, 3.73, TRUE, 'p < 0.05', NULL),
@@ -102,7 +102,7 @@ INSERT INTO ace_and_parenting.maternal_aces_behavioral_problems
 ('Adjusted', 'Hyperactivity index', '≥4', 3.71, 2.25, 6.11, TRUE, 'p < 0.05', 0.0001);
 
 -- VERIFY DATA INTEGRITY
-SELECT  Significant FROM ace_and_parenting.maternal_aces_behavioral_problems;
+SELECT  Significant FROM aces_and_parenting.maternal_aces_behavioral_problems;
 
 -- DATA QUERY ANALYSIS
 SELECT 
@@ -111,7 +111,7 @@ SELECT
     ace_count, 
     odds_ratio, 
     significant
-FROM ace_and_parenting.maternal_aces_behavioral_problems 
+FROM aces_and_parenting.maternal_aces_behavioral_problems 
 WHERE significant = TRUE and model_type = 'Adjusted'
 ORDER BY odds_ratio DESC;
 
