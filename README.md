@@ -2,7 +2,7 @@
 
 
 
-**Insights**
+## **Insights**
 
 **1. Behaviour of the Parent**
 - Parents who experienced **adversity in childhood** are more likely to rely on **harsh discipline** (like corporal punishment).
