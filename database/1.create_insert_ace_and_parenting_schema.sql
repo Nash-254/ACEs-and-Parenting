@@ -286,8 +286,14 @@ INSERT INTO aces_and_parenting.regression_paths (source, mediator, parental_beha
 select * from aces_and_parenting.regression_paths;
 
 -- DATA QUERY ANALYSIS
--- Query to find all significant direct effects of ACEs on parenting behaviours as per the report results, ordered by beta descending
-select *
+-- Query to find all significant direct effects of ACEs on parenting behaviours as, ordered by beta descending
+select 
+    source,
+    parental_behaviour,
+    effect_type,
+    beta,
+    significance,
+    p_value
 from aces_and_parenting.regression_paths
 where significance not in ('Not Significant') and source not in ('Sex (Female)')   
 order by beta DESC;
