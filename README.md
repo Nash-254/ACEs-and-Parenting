@@ -6,7 +6,7 @@ This project aims to examine the impact of **Adverse Childhood Experiences (ACEs
 ## Data Source
 The data used in this project is drawn from **peer-reviewed journals** mainly from [BioMedCentral.com](https://capmh.biomedcentral.com/) and [ScienceDirect.com](https://www.sciencedirect.com/) which are open access to the public. 
 
-The data in this study was obtained from mothers in Chengdu, China and parents of students in Chiang Mai, Thailand.
+The data in the studies was obtained from mothers in Chengdu, China and parents of students in Chiang Mai, Thailand.
 
 See references section for citation details.
 
