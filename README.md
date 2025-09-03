@@ -47,7 +47,7 @@ A hybrid approach integrated **SQL’s efficiency** in data extraction, schema d
 ![ACEs and direct parental mental health and parenting behaviour](/visuals/2.ACEs_and_direct_mental_health_parenting_behaviour.png)
 **Figure 2.** ACEs and direct parental mental health and parenting behaviour.
 
-See [ACEs and Parenting_notebook](/notebooks/ACEs_and_Parenting_notebook.ipynb) for detailed analysis process.
+See [ACEs and Parenting notebook](/notebooks/ACEs_and_Parenting_notebook.ipynb) for detailed analysis process.
 
 ## Conclusion
 **Maternal ACEs increase the risk of diverse child behavioral problems** in a clear dose–response pattern, with rejecting parenting styles partly mediating this link, though strong direct effects remain. Parental ACEs are also a **strong predictor of corporal punishment, independent of maternal mental health**, suggesting that **childhood adversity directly shapes parenting** through learned behavior models. For **children**, exposure to **harsher parenting practices increases the risk of negative socio-emotional outcomes** and perpetuates the intergenerational cycle of trauma.
