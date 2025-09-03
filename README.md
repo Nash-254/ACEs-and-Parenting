@@ -55,7 +55,6 @@ See [ACEs and Parenting notebook](/notebooks/ACEs_and_Parenting_notebook.ipynb) 
 However, these findings also highlight a critical **opportunity**: with **trauma-informed care**, targeted parenting support, and strategies that strengthen maternal well-being, it is possible to **break this cycle**. By equipping parents with healthier models of care and support, we can foster resilience and build a more **hopeful future for the next generation**.
 
 
-
 ###  References
 
 [^1]: [Maternal adverse childhood experiences and behavioral problems in preschool offspring: the mediation role of parenting styles"; Table 2.](https://capmh.biomedcentral.com/articles/10.1186/s13034-023-00646-3). ```Luo, S., Chen, D., Li, C. et al. Maternal adverse childhood experiences and behavioral problems in preschool offspring: the mediation role of parenting styles. Child Adolesc Psychiatry Ment Health 17, 95 (2023). https://doi.org/10.1186/s13034-023-00646-3.```
