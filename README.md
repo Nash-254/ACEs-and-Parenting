@@ -37,15 +37,17 @@ A hybrid approach integrated **SQL’s efficiency** in data extraction, schema d
 ![Maternal ACEs and children behaviour outcomes](/visuals/1.Maternal_ACEs_and_Children_Behaviour.png)
 **Figure 1.** Maternal ACEs and children behaviour outcomes. 
 
-### 2. Relationship between parental ACEs and parenting, the effect on mental health which possibly mediated parenting behaviors.
+### 2. Relationship between parental ACEs and parenting, the effect on mental health which possibly mediate parenting behaviors.
 
 **Insights**
 
-- **Parental ACEs are a strong predictor of corporal punishment, independent of mental health factors**. This suggests that ACEs shape parenting styles directly, likely through learned behaviour models.
+- **Parental ACEs are a strong predictor of corporal punishment, independent of mental health factors**. This suggests that **ACEs shape parenting styles directly**, likely through learned behaviour models.
 - For the **child**, increased **corporal punishment** raises risks of **negative socio-emotional outcomes** and perpetuates the **intergenerational cycle of trauma**.
 
 ![ACEs and direct parental mental health and parenting behaviour](/visuals/2.ACEs_and_direct_mental_health_parenting_behaviour.png)
 **Figure 2.** ACEs and direct parental mental health and parenting behaviour.
+
+See [ACEs and Parenting_notebook](/notebooks/ACEs_and_Parenting_notebook.ipynb)
 
 ## Recommendations
 
