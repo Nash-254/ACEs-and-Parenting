@@ -47,7 +47,7 @@ A hybrid approach integrated **SQL’s efficiency** in data extraction, schema d
 ![ACEs and direct parental mental health and parenting behaviour](/visuals/2.ACEs_and_direct_mental_health_parenting_behaviour.png)
 **Figure 2.** ACEs and direct parental mental health and parenting behaviour.
 
-See [ACEs and Parenting_notebook](/notebooks/ACEs_and_Parenting_notebook.ipynb) for detailed analysis process.
+==See [ACEs and Parenting_notebook](/notebooks/ACEs_and_Parenting_notebook.ipynb) for detailed analysis process==.
 
 ## Recommendations
 
