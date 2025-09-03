@@ -11,7 +11,7 @@ The data in the studies was obtained from mothers in Chengdu, China and parents 
 See references section for citation details.
 
 ## Project Objectives
-The project seeks to highlight:
+The project aims:
 1. To examine the **association between maternal ACEs** and **behavioral problems** in their **preschool offspring**. Study was conducted involving 4,243 mother-child dyads in Chengdu, China. [^1]
 2. To examine the **relationship between parental ACEs** and **parenting**, the **effect of mental health** which possibly **mediated parenting behaviors**. Data was obtained from 403 parents of 6–18-year-old students in Chiang Mai, Thailand,
 from January to February 2023. [^2]
@@ -28,42 +28,33 @@ A hybrid approach integrated **SQL’s efficiency** in data extraction, schema d
 - **Jupyter Notebooks**: An interactive environment for combining code, text, and visuals in one document.
 - **Git & GitHub**: Version control.
 
-## Schema Design
-The database is organized into one schema, containing structured tables optimized for storing and querying the study datasets. All tables include primary keys, appropriate data types, and constraints to ensure referential integrity and facilitate cross-study analysis. Data was sourced from specific tables in the articles.
-
 ## Data Analysis
 ### 1. Association between maternal ACEs and behavioral problems in their preschool offspring.
 **Insights**
-
+- Children of mothers with **one or more ACE** exposure had **significantly higher risk** of conduct problems, psychosomatic problems, anxiety, and hyperactivity index, compared to those without maternal ACE exposure.
+- There's a **strong association** between **maternal ACEs** and different types of **behavioral problems**, strongest being in **conduct problems** in the child of mothers with an ACE count of equal to or more than 4.
+  
 ![Maternal ACEs and children behaviour outcomes](/visuals/1.Maternal_ACEs_and_Children_Behaviour.png)
-**Figure 1.** Maternal ACEs and children behaviour outcomes 
+**Figure 1.** Maternal ACEs and children behaviour outcomes. 
 
 ### 2. Relationship between parental ACEs and parenting, the effect on mental health which possibly mediated parenting behaviors.
 
 **Insights**
 
-**1. Behaviour of the Parent**
-- Parents who experienced **adversity in childhood** are more likely to rely on **harsh discipline** (like corporal punishment).
-- This effect persists even when controlling for mental health symptoms → meaning it’s not just about depression or stress, but possibly about learned models of parenting.
-- Female parents (possibly due to being more present in daily caregiving) reported using corporal punishment more.
+- **Parental ACEs are a strong predictor of corporal punishment, independent of mental health factors**. This suggests that ACEs shape parenting styles directly, likely through learned behaviour models.
+- For the **child**, increased **corporal punishment** raises risks of **negative socio-emotional outcomes** and perpetuates the **intergenerational cycle of trauma**.
 
-![ACEs and direct parental mental health and parentingbehaviour](/visuals/2.ACEs_and_direct_mental_health_parenting_behaviour.png)
-
+![ACEs and direct parental mental health and parenting behaviour](/visuals/2.ACEs_and_direct_mental_health_parenting_behaviour.png)
+**Figure 2.** ACEs and direct parental mental health and parenting behaviour.
 
 ## Recommendations
 
 ## Conclusion
-**Parental ACEs are a strong predictor of corporal punishment, independent of mental health factors**. This suggests that ACEs shape parenting styles directly, likely through learned behaviour models.
-For the **child**, increased **corporal punishment** raises risks of **negative socio-emotional outcomes** and perpetuates the **intergenerational cycle of trauma**.
+**Maternal ACEs increase the risk of diverse child behavioral problems** in a clear dose–response pattern, with rejecting parenting styles partly mediating this link, though strong direct effects remain. Parental ACEs are also a **strong predictor of corporal punishment, independent of maternal mental health**, suggesting that **childhood adversity directly shapes parenting** through learned behavior models. For **children**, exposure to **harsher parenting practices increases the risk of negative socio-emotional outcomes** and perpetuates the intergenerational cycle of trauma.
 
- **2. Future of the Child**
-- Exposure to corporal punishment is strongly linked (from broader literature) to:
-  - Higher **aggression** and **externalizing behaviours** (acting out, defiance).
-  - Lower **emotional regulation** and **trust**.
-  - Increased risk of **cycle of violence** → children who are punished harshly are more likely to use aggression in adulthood.
-- Therefore, children of parents with high ACEs face a **double risk**:
-  - Direct exposure to corporal punishment.
-  - Potential intergenerational transmission of trauma (they may themselves parent harshly later).
+However, these findings also highlight a critical **opportunity**: with **trauma-informed care**, targeted parenting support, and strategies that strengthen maternal well-being, it is possible to **break this cycle**. By equipping parents with healthier models of care and support, we can foster resilience and build a more **hopeful future for the next generation**.
+
+
 
 ###  References
 
