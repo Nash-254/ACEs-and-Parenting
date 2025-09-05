@@ -50,7 +50,7 @@ A hybrid approach integrated **SQL’s efficiency** in data extraction, schema d
 See [ACEs and Parenting notebook](/notebooks/ACEs_and_Parenting_notebook.ipynb) for detailed analysis process.
 
 ## Conclusion
-**Maternal ACEs increase the risk of diverse child behavioral problems** in a clear dose–response pattern, with rejecting parenting styles partly mediating this link, though strong direct effects remain. Parental ACEs are also a **strong predictor of corporal punishment, independent of maternal mental health**, suggesting that **childhood adversity directly shapes parenting** through learned behavior models. For **children**, exposure to **harsher parenting practices increases the risk of negative socio-emotional outcomes** and perpetuates the intergenerational cycle of trauma.
+**Maternal ACEs increase the risk of diverse child behavioral problems** in a clear dose–response pattern, with rejecting parenting styles partly mediating this link, though strong direct effects remain. Parental ACEs are also a **strong predictor of corporal punishment**, independent of maternal mental health, suggesting that **childhood adversity directly shapes parenting** through learned behavior models. For **children**, exposure to **harsher parenting practices increases the risk of negative socio-emotional outcomes** and perpetuates the **intergenerational cycle of trauma**.
 
 However, these findings also highlight a critical **opportunity**: with **trauma-informed care**, targeted parenting support, and strategies that strengthen maternal well-being, it is possible to **break this cycle**. By equipping parents with healthier models of care and support, we can foster resilience and build a more **hopeful future for the next generation**.
 
